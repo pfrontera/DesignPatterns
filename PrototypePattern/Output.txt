@@ -1,0 +1,33 @@
+Creating concrete prototypes from an abstract class :
+
+    Model: Les Paul Price: 10000 HashCode: 58225482
+    Model: Les Paul Price: 10000 HashCode: 18643596
+    Model: Stratocaster Price: 7000 HashCode: 33574638
+    Model: Stratocaster Price: 7000 HashCode: 33736294
+    
+Making a Deep Clone    
+
+Object MusicianOne :
+    Musician Id: 1, Name: Anton Newcombe, HashCode: 35191196 Band: The Brian Jonestown Massacre, HashCode: 48285313
+Cloned object :
+    Musician Id: 1, Name: Anton Newcombe, HashCode: 31914638 Band: The Brian Jonestown Massacre, HashCode: 18796293
+
+After changes on Cloned Object, MusicianOne values are intact : 
+    Musician Id: 1, Name: Anton Newcombe, HashCode: 35191196 Band: The Brian Jonestown Massacre, HashCode: 48285313
+
+Values on Cloned object after changes :
+    Musician Id: 1, Name: Anton Newcombe, HashCode: 31914638 Band: L'Epee, HashCode: 18796293
+
+Making a Shallow Copy :
+
+Object MusicianTwo :
+    Musician Id: 2, Name: Ace Frehley, HashCode: 34948909 Band: KISS, HashCode: 46104728
+
+Cloned Object :
+Musician Id: 2, Name: Ace Frehley, HashCode: 12289376 Band: KISS, HashCode: 46104728
+
+Changes on cloned Object :
+    Musician Id: 2, Name: Ace Frehley, HashCode: 34948909 Band: Frehley's Comet, HashCode: 46104728
+
+Changes on cloned object affected MusicianTwo values :
+    Musician Id: 2, Name: Ace Frehley, HashCode: 12289376 Band: Frehley's Comet, HashCode: 46104728
