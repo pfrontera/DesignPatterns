@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using PrototypePattern.PrototypePattern;
+﻿using PrototypePattern.PrototypePattern;
 
 // Creating Concrete prototypes from an abstract class, a prototype.
 
@@ -15,7 +14,7 @@ Console.WriteLine(fender);
 Console.WriteLine(guitarClone);
 
 
-// Cloning Deep and Shallow.
+// Cloning Deep, Shallow and Copy Constructor.
 
 
 // Deep Copy.
@@ -36,3 +35,9 @@ Console.WriteLine(shallowClonedMusician);
 shallowClonedMusician.Band.Name = "Frehley's Comet"; // This affects to the original reference.
 Console.WriteLine(musicianTwo);
 Console.WriteLine(shallowClonedMusician);
+
+// Using a copy constructor.
+var employee = new Employee( "Anton Newcombe", "The Brian Jonestown Massacre");
+var employeeCopy = new Employee(employee);
+Console.WriteLine(employee);
+Console.WriteLine(employeeCopy);
