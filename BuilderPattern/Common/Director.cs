@@ -1,6 +1,7 @@
 using BuilderPattern.AbstractBuilderWithDirector;
+using BuilderPattern.BuilderWithDirector;
 
-namespace BuilderPattern.BuilderWithDirector;
+namespace BuilderPattern.Common;
 
 public class Director
 {
