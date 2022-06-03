@@ -8,11 +8,10 @@ create an object that is based on another object.
 
 
 *Implementation steps* :
-* Having a prototype interface or prototype abstract class with the method clone().
 
-* The concrete class that implements the prototype interface or the concrete class that extends the prototype abstract class.
-
-* The client class in this case, Program, can create a new object by calling the clone() method of the prototype object.
+    1. Having a prototype interface or prototype abstract class with the method clone().
+    2. The concrete class that implements the prototype interface or the concrete class that extends the prototype abstract class.
+    3. The client class in this case, Program, can create a new object by calling the clone() method of the prototype object.
 
 In the examples you can see that if the class has circular dependencies, the clone() method (known as shallow clone) will not work. In that case, you need to use do a Deep Copy.
 
