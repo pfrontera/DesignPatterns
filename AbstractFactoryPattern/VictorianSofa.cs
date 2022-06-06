@@ -1,4 +1,6 @@
-﻿namespace AbstractFactoryPattern;
+﻿using System;
+
+namespace AbstractFactoryPattern;
 
 public class VictorianSofa : ISofa
 {

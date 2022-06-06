@@ -1,6 +1,8 @@
 # DesignPatterns
 Design Patterns
 
+## Creational patterns:
+
 ### [Singleton](SingletonPattern/SingletonPattern.md)
 
 ### [Prototype](PrototypePattern/PrototypePattern.md)

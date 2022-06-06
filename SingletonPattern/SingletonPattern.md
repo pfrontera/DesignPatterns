@@ -1,4 +1,4 @@
-#Singleton Pattern
+# Singleton Pattern
 
 GoF Definition:
 Ensure a class has only one instace, and provide a global point of access of it.
@@ -9,7 +9,7 @@ Ensure a class has only one instace, and provide a global point of access of it.
     2. Create a static creation method that acts as a constructor. Under the hood, this method calls the private constructor to create an object and saves it in a static field. All following calls to this method return the cached object.
 
 
-## Singleton
+### Singleton
 
 This example lays on a Static Constructor.
 In this way we take the advantage that when accessing a static 
@@ -28,13 +28,13 @@ var totalInstances = Singleton.TotalInstances;
 //so, totalInstances will be 1. 
 ```
 
-## BadSingleton
+### BadSingleton
 
 Using this approach it can be useful in a single threaded environment,
 but if there are two or more threads evaluating the same code perhaps 
 more instances are created than desired.
 
-## LockedSingleton
+### LockedSingleton
 
 This example makes use of locks.
 Lock keyword restricts code from being executed by more than one thread at the same time.
@@ -45,7 +45,7 @@ all threads will observe volatile writes performed by any other thread in the
 order in which they were performed. This means *It ensures that the most current
 value is always present in the field*.
 
-## LazySingleton
+### LazySingleton
 
 Used for *lazy initialization*. Technique used to delay the object creation
 process. The idea is create the object only when is truly required.
