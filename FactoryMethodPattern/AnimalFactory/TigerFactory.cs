@@ -1,4 +1,4 @@
-namespace FactoryMethodPattern
+namespace FactoryMethodPattern.AnimalFactory
 {
     public class TigerFactory : AnimalFactory
     {
